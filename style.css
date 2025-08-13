@@ -49,7 +49,7 @@ h3 {
     color: white;
 
     /* 新しい背景画像を指定 */
-    background-image: url('https://storage.googleapis.com/gemini-prod/images/45598818-a6d1-447a-adac-7a71f021e875');
+    background-image: url('https://helryo.github.io/jf-lp/image/top01');
     background-size: cover; /* 画像をセクション全体に表示 */
     background-position: center; /* 画像を中央に配置 */
 }
