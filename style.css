@@ -1,0 +1,177 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 0;
+    background-color: #fff5fd; /* 淡いピンクの背景 */
+    color: #5c3b3b; /* 落ち着いた茶色 */
+    text-align: center;
+}
+
+/* 画像のレスポンシブ対応 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* 画像の角を丸くする */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* セクションごとの余白 */
+section {
+    padding: 40px 20px;
+}
+
+/* 見出しのスタイル */
+h1, h2, h3 {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff69b4; /* ホットピンク */
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #f7a; /* 明るいピンク */
+}
+
+/* ヘッダー */
+/* ↓↓↓ この部分を差し替える ↓↓↓ */
+/* ヒーローセクション（トップビュー） */
+.hero {
+    position: relative; /* 子要素を絶対配置するための基準 */
+    height: 100vh; /* 画面の高さいっぱいに表示 */
+    display: flex;
+    align-items: center; /* 内容を垂直方向に中央揃え */
+    justify-content: center; /* 内容を水平方向に中央揃え */
+    text-align: center;
+    color: white;
+
+    /* 新しい背景画像を指定 */
+    background-image: url('https://storage.googleapis.com/gemini-prod/images/45598818-a6d1-447a-adac-7a71f021e875');
+    background-size: cover; /* 画像をセクション全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+}
+
+/* 画像の上に重ねる半透明のオーバーレイ */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* 少し暗くして文字を読みやすくする */
+}
+
+/* テキストコンテンツのスタイル */
+.hero-content {
+    position: relative; /* オーバーレイの上に表示するため */
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5em; /* フォントサイズを大きく */
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* テキストの影を濃く */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+/* ↑↑↑ この部分までを差し替える ↑↑↑ */
+/* メインビジュアル */
+.main-visual {
+    max-width: 500px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+/* 導入文 */
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* サービスセクション */
+.service {
+    background-color: #ffffff;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    max-width: 400px;
+    background: #fffafa; /* スノーホワイト */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-item img {
+    margin-top: 15px;
+}
+
+/* ブースセクション */
+.booth-img {
+    max-width: 600px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* フッター */
+footer {
+    background-color: #ffb6c1; /* ライトピンク */
+    color: white;
+    padding: 30px 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    background-color: #ff69b4;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* ホバー時に少し大きくする */
+}
+
+.copy {
+    margin-top: 20px;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+/* キラキラアニメーション */
+.sparkle {
+    position: relative;
+    display: inline-block;
+}
+
+.sparkle::after {
+    content: '✨';
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    animation: sparkle-animation 1.5s infinite;
+    font-size: 1.2em;
+}
+
+@keyframes sparkle-animation {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.8); opacity: 0.5; }
+}
