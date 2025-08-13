@@ -177,6 +177,10 @@ footer {
     100% { transform: scale(0.8); opacity: 0.5; }
 }
 
+.social-links{
+    padding-bottom: 50px;
+}
+
 .fixed-cta {
   display: flex;
   position: fixed;
