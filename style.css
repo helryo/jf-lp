@@ -41,7 +41,7 @@ h3 {
 /* ヒーローセクション（トップビュー） */
 .hero {
     position: relative; /* 子要素を絶対配置するための基準 */
-    height: 100vh; /* 画面の高さいっぱいに表示 */
+    height: 80vh; /* 画面の高さいっぱいに表示 */
     display: flex;
     align-items: center; /* 内容を垂直方向に中央揃え */
     justify-content: center; /* 内容を水平方向に中央揃え */
@@ -61,7 +61,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* 少し暗くして文字を読みやすくする */
+    background-color: rgba(0, 0, 0, 0.1); /* 少し暗くして文字を読みやすくする */
 }
 
 /* テキストコンテンツのスタイル */
